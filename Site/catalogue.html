@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/catalogue.css">
+    <link rel="icon" type="image/x-icon" href="img-home/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://fonts.cdnfonts.com/css/elianto" rel="stylesheet">
+    <title>Front-End Bazaar - Catalogue</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-height fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand elianto mt-1" href="index.html">
+          <img src="img-home/favicon.png" alt="" class="logo-img px-3">
+          <h4>FRONT-END BAZAAR</h4>
+        </a>
+        <button class="navbar-toggler button-mt button-mr" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="bbtn bi bi-list fs-3"></i>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header text-white">
+            <h5 class="offcanvas-title fs-2" id="offcanvasNavbarLabel">Browse the Bazaar</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active text-white fs-4 hover" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white fs-4 hover" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Catalogue
+                </a>
+                <ul class="dropdown-menu text-bg-dark">
+                  <li><a class="dropdown-item text-bg-dark text-white fs-5 hover" href="catalogue.html">All</a></li>
+                  <hr class="dropdown-divider">
+                  <li><a class="dropdown-item text-bg-dark text-white hover" href="catalogue.html#presets">Presets</a></li>
+                  <li><a class="dropdown-item text-bg-dark text-white hover" href="catalogue.html#colors">Colors</a></li>
+                  <li><a class="dropdown-item text-bg-dark text-white hover" href="catalogue.html#images">Images</a></li>
+                  <li><a class="dropdown-item text-bg-dark text-white hover" href="catalogue.html#add-ons">Add-ons</a></li>
+                </ul>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-4 hover" href="index.html#pricing">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white fs-4 hover" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Order
+                </a>
+                <ul class="dropdown-menu text-bg-dark">
+                  <li><a class="dropdown-item text-bg-dark text-white hover" href="index.html#pricing">Choose presets</a></li>
+                  <li><a class="dropdown-item text-bg-dark text-white hover" href="https://www.fiverr.com/frontendbazaar" target="_blank">From scratch</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-4 hover" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-4 hover" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-4 hover" href="legal.html">Legal</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main PAGE -->
+
+    <main>
+
+        <!-- Main content -->
+        <div class="main-container poppins">
+          <!-- Main page header -->
+          <div class="header">
+            <div class="header-title">
+              <h1 class="fs-5">Table of contents</h1>
+            </div>
+            <div class="header-links">
+              <div class="header-topic">
+                <a href="#presets" class="header-link ">
+                  <h2 class="header-item fs-4">Presets</h2>
+                </a>
+                <hr>
+                <a href="#home-pages" class="header-list-link fs-5">Home</a>
+                <a href="#products-pages" class="header-list-link fs-5">Products</a>
+                <a href="#product-pages" class="header-list-link fs-5">Product</a>
+                <a href="#blogs-pages" class="header-list-link fs-5">Blogs</a>
+                <a href="#blog-post-pages" class="header-list-link fs-5">Blog post</a>
+                <a href="#about-pages" class="header-list-link fs-5">About</a>
+                <a href="#contact-pages" class="header-list-link fs-5">Contact</a>
+                <a href="#legal-pages" class="header-list-link fs-5">Legal</a>
+                <a href="#log-in-pages" class="header-list-link fs-5">Log-in</a>
+                <a href="#sign-up-pages" class="header-list-link fs-5">Sign-up</a>
+                <a href="#account-pages" class="header-list-link fs-5">Account</a>
+              </div>
+              <div class="header-topic">
+                <a href="#colors" class="header-link ">
+                  <h2 class="header-item fs-4">Colors</h2>
+                </a>
+                <hr>
+                <a href="#colors" class="header-list-link fs-5">Forest</a>
+                <a href="#colors" class="header-list-link fs-5">Baby</a>
+                <a href="#colors" class="header-list-link fs-5">Bubblegum</a>
+                <a href="#colors" class="header-list-link fs-5">Pistachio</a>
+                <a href="#colors" class="header-list-link fs-5">Vanilla</a>
+                <a href="#colors" class="header-list-link fs-5">Mint</a>
+              </div>
+              <div class="header-topic">
+                <a href="#images" class="header-link ">
+                  <h2 class="header-item fs-4">Images</h2>
+                </a>
+                <hr>
+                <a href="#backgrounds" class="header-list-link fs-5">Backgrounds</a>
+                <a href="#parallax" class="header-list-link fs-5">Parallax</a>
+                <a href="#favicons" class="header-list-link fs-5">Favicons</a>
+                <a href="#logos" class="header-list-link fs-5">Logos</a>
+              </div>
+              <div class="header-topic">
+                <a href="#add-ons" class="header-link ">
+                  <h2 class="header-item fs-4">Add-ons</h2>
+                </a>
+                <hr>
+                <a href="#headers" class="header-list-link fs-5">Headers</a>
+                <a href="#forms" class="header-list-link fs-5">Forms</a>
+                <a href="#buttons" class="header-list-link fs-5">Buttons</a>
+                <a href="#search-bars" class="header-list-link fs-5">Search Bars</a>
+                <a href="#footers" class="header-list-link fs-5">Footers</a>
+                <a href="#log-in-prompts" class="header-list-link fs-5">Log-in prompts</a>
+                <a href="#sign-up-prompts" class="header-list-link fs-5">Sign-up prompts</a>
+                <a href="#newsletters" class="header-list-link fs-5">Newsletters</a>
+              </div>
+            </div>  
+          </div>
+
+        <div class="catalogue">
+
+          <!-- PRESETS -->
+
+          <h1 class="presets-header fs-2" id="presets"><strong>Presets</strong></h1>
+          <p class="note px-3"><strong>Note</strong>: The image featured in the templates is indicative. In reality, your website will contain as many images you want.</p>
+          <p class="note px-3"><strong>Note</strong>: To get a better understanding of how Responsive Design works, click on the preset name to open the full-size design, access Developer Tools in your browser and resize the window to different mobile phones and tablet sizes. The designs do not look the same regardless of the device resolution, the layout changes in order to suit the screen better.</p>
+
+          <!-- Home pages -->
+
+          <h2 class="pages-title fs-3 text-decoration-underline" id="home-pages">Home pages</h2>
+          <div class="templates-container p-1">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">
+                  <a href="templates/presets/home/moonlight/moonlight.html" target="_blank">Moonlight</a> - <span class="price fs-3">$7</span>
+                </h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring a landing section containing the website name, a brief description and a featured products section with a "Browse" button.
+                </p>
+              </div>
+            </div>
+            <hr>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/sunshine/sunshine.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">
+                  <a href="templates/presets/home/sunshine/sunshine.html" target="_blank">Sunshine</a> - <span class="price fs-3">$7</span>
+                </h2>
+                <p class="template-description fs-5">
+                  Similar to Moonlight, yet featuring tiles instead of full-screen images. The background behind the tiles can be the same as the one of the header and footer, or any color you want.
+                </p>
+              </div>
+            </div>
+            <hr>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/gemini_33_v1/gemini_33_v1.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">
+                  <a href="templates/presets/home/gemini_33_v1/gemini_33_v1.html" target="_blank">Gemini 33 v1</a> - <span class="price fs-3">$8</span>
+                </h2>                
+                <p class="template-description fs-5">
+                  Defined by asymmetrical tiles, this preset is perfect for featuring an image that tells a story. 
+                </p>
+              </div>
+            </div>
+            <hr>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/gemini_50_v1/gemini_50_v1.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">
+                  <a href="templates/presets/home/gemini_50_v1/gemini_50_v1.html" target="_blank">Gemini 50 v1</a> - <span class="price fs-3">$8</span>
+                </h2>  
+                <p class="template-description fs-5">
+                  Similar to Gemini 33 v1, but containing symmetrical horizontally-aligned tiles.
+                </p>
+              </div>
+            </div>
+            <hr>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/gemini_33_v2/gemini_33_v2.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">
+                  <a href="templates/presets/home/gemini_33_v2/gemini_33_v2.html" target="_blank">Gemini 33 v2</a> - <span class="price fs-3">$8</span>
+                </h2>  
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <hr>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/gemini_50_v2/gemini_50_v2.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">
+                  <a href="templates/presets/home/gemini_50_v2/gemini_50_v2.html" target="_blank">Gemini 50 v2</a> - <span class="price fs-3">$8</span>
+                </h2>  
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Products pages -->
+
+          <h2 class="pages-title fs-3 text-decoration-underline" id="products-pages">Products pages</h2>
+          <div class="templates-container">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Product pages -->
+
+          <h2 class="pages-title fs-3 text-decoration-underline" id="product-pages">Product pages</h2>
+          <div class="templates-container">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Blogs pages -->
+
+          <h2 class="pages-title fs-3 text-decoration-underline" id="blogs-pages">Blogs pages</h2>
+          <div class="templates-container">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Blog post pages -->
+
+          <h2 class="pages-title fs-3 text-decoration-underline" id="blog-post-pages">Blog post pages</h2>
+          <div class="templates-container">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- About pages -->
+
+          <h2 class="pages-title fs-3 text-decoration-underline" id="about-pages">About pages</h2>
+          <div class="templates-container">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Contact pages -->
+
+          <h2 class="pages-title fs-3 text-decoration-underline" id="contact-pages">Contact pages</h2>
+          <div class="templates-container">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Legal pages -->
+
+          <h2 class="pages-title fs-3 text-decoration-underline" id="legal-pages">Legal pages</h2>
+          <div class="templates-container">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Log-in pages -->
+
+          <h2 class="pages-title fs-3 text-decoration-underline" id="log-in-pages">Log-in pages</h2>
+          <div class="templates-container">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Sign-up pages -->
+
+          <h2 class="pages-title fs-3 text-decoration-underline" id="sign-up-pages">Sign-up pages</h2>
+          <div class="templates-container">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Account pages -->
+
+          <h2 class="pages-title fs-3 text-decoration-underline" id="account-pages">Account pages</h2>
+          <div class="templates-container">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- COLORS -->
+
+          <h1 class="presets-header fs-2" id="colors"><strong>Colors</strong></h1>
+
+          <div class="templates-container">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template" id="moonlight"></iframe>
+              </div>
+              <div class="iframe-details">
+                <div class="color-change">
+                  <div class="spacing">
+                    <p>Forest</p>
+                    <button onclick="changeMoonlightForestV1()" class="color-picker">1</button>
+                    <button onclick="changeMoonlightForestV2()" class="color-picker">2</button>
+                    <button onclick="changeMoonlightForestV3()" class="color-picker">3</button>
+                    <button onclick="changeMoonlightForestV4()" class="color-picker">4</button>
+                    <button onclick="changeMoonlightForestV5()" class="color-picker">5</button>
+                    <button onclick="changeMoonlightForestV6()" class="color-picker">6</button>
+                  </div>
+                  <div class="spacing">
+                    <p>Baby</p>
+                    <button onclick="changeMoonlightBabyV1()" class="color-picker">1</button>
+                    <button onclick="changeMoonlightBabyV2()" class="color-picker">2</button>
+                    <button onclick="changeMoonlightBabyV3()" class="color-picker">3</button>
+                    <button onclick="changeMoonlightBabyV4()" class="color-picker">4</button>
+                    <button onclick="changeMoonlightBabyV5()" class="color-picker">5</button>
+                    <button onclick="changeMoonlightBabyV6()" class="color-picker">6</button>
+                  </div>
+                  <div class="spacing">
+                    <p>Bubblegum</p>
+                    <button onclick="changeMoonlightBubblegumV1()" class="color-picker">1</button>
+                    <button onclick="changeMoonlightBubblegumV2()" class="color-picker">2</button>
+                    <button onclick="changeMoonlightBubblegumV3()" class="color-picker">3</button>
+                    <button onclick="changeMoonlightBubblegumV4()" class="color-picker">4</button>
+                    <button onclick="changeMoonlightBubblegumV5()" class="color-picker">5</button>
+                    <button onclick="changeMoonlightBubblegumV6()" class="color-picker">6</button>
+                  </div>
+                  <div class="spacing">
+                    <p>Pistachio</p>
+                    <button onclick="changeMoonlightPistachioV1()" class="color-picker">1</button>
+                    <button onclick="changeMoonlightPistachioV2()" class="color-picker">2</button>
+                    <button onclick="changeMoonlightPistachioV3()" class="color-picker">3</button>
+                    <button onclick="changeMoonlightPistachioV4()" class="color-picker">4</button>
+                    <button onclick="changeMoonlightPistachioV5()" class="color-picker">5</button>
+                    <button onclick="changeMoonlightPistachioV6()" class="color-picker">6</button>
+                  </div>
+                  <div class="spacing">
+                    <p>Vanilla</p>
+                    <button onclick="changeMoonlightVanillaV1()" class="color-picker">1</button>
+                    <button onclick="changeMoonlightVanillaV2()" class="color-picker">2</button>
+                    <button onclick="changeMoonlightVanillaV3()" class="color-picker">3</button>
+                    <button onclick="changeMoonlightVanillaV4()" class="color-picker">4</button>
+                    <button onclick="changeMoonlightVanillaV5()" class="color-picker">5</button>
+                    <button onclick="changeMoonlightVanillaV6()" class="color-picker">6</button>
+                  </div>
+                  <div class="spacing">
+                    <p>Mint</p>
+                    <button onclick="changeMoonlightMintV1()" class="color-picker">1</button>
+                    <button onclick="changeMoonlightMintV2()" class="color-picker">2</button>
+                    <button onclick="changeMoonlightMintV3()" class="color-picker">3</button>
+                    <button onclick="changeMoonlightMintV4()" class="color-picker">4</button>
+                    <button onclick="changeMoonlightMintV5()" class="color-picker">5</button>
+                    <button onclick="changeMoonlightMintV6()" class="color-picker">6</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- IMAGES -->
+
+          <h1 class="presets-header fs-2" id="images"><strong>Images</strong></h1>
+
+          <!-- Backgrounds -->
+
+          <h2 class="pages-title fs-3 text-decoration-underline" id="backgrounds">Backgrounds</h2>
+          <div class="templates-container">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Parallax -->
+
+          <h2 class="pages-title fs-3 text-decoration-underline" id="parallax">Parallax</h2>
+          <div class="templates-container">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+            <!-- Favicons -->
+
+          <h2 class="pages-title fs-3 text-decoration-underline" id="favicons">Favicons</h2>
+          <div class="templates-container">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+          
+            <!-- Logos -->
+
+          <h2 class="pages-title fs-3 text-decoration-underline" id="logos">Logos</h2>
+          <div class="templates-container">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ADD-ONS -->
+
+          <h1 class="presets-header fs-2" id="add-ons"><strong>Add-ons</strong></h1>
+
+          <!-- Headers -->
+
+          <h2 class="pages-title fs-3 text-decoration-underline" id="headers">Headers</h2>
+          <div class="templates-container">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Forms -->
+
+          <h2 class="pages-title fs-3 text-decoration-underline" id="forms">Forms</h2>
+          <div class="templates-container">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Buttons -->
+
+          <h2 class="pages-title fs-3 text-decoration-underline" id="buttons">Buttons</h2>
+          <div class="templates-container">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Search bars -->
+
+          <h2 class="pages-title fs-3 text-decoration-underline" id="search-bars">Search bars</h2>
+          <div class="templates-container">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Footers -->
+
+          <h2 class="pages-title fs-3 text-decoration-underline" id="footers">Footers</h2>
+          <div class="templates-container">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Log-in prompts -->
+
+          <h2 class="pages-title fs-3 text-decoration-underline" id="log-in-prompts">Log-in prompts</h2>
+          <div class="templates-container">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Sign-up prompts -->
+
+          <h2 class="pages-title fs-3 text-decoration-underline" id="sign-up-prompts">Sign-up prompts</h2>
+          <div class="templates-container">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Newsletters -->
+
+          <h2 class="pages-title fs-3 text-decoration-underline" id="newsletters">Newsletters</h2>
+          <div class="templates-container">
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Moonlight</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+            <div class="template-container">
+              <div class="iframe">
+                <iframe src="templates/presets/home/moonlight/moonlight.html" frameborder="0" class="template"></iframe>
+              </div>
+              <div class="iframe-details">
+                <h2 class="template-header fs-4">Sunshine</h2>
+                <p class="template-description fs-5">
+                  A minimalistic, yet good-looking and fresh design, featuring...
+                </p>
+              </div>
+            </div>
+          </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-left">
+        <div class="footer-links">
+          <h3 class="footer-header">Links</h3>
+          <a href="index.html" class="footer-link-a">
+            <p class="footer-link">Home</p>
+          </a>
+          <a href="catalogue.html" class="footer-link-a">
+            <p class="footer-link">Catalogue</p>
+          </a>
+          <a href="index.html#fp" class="footer-link-a" target="_blank">
+            <p class="footer-link">Order</p>
+          </a>
+          <a href="about.html" class="footer-link-a">
+            <p class="footer-link">About</p>
+          </a>
+          <a href="contact.html" class="footer-link-a">
+            <p class="footer-link">Contact</p>
+          </a>
+        </div>
+        <div class="footer-links">
+          <h3 class="footer-header">Social</h3>
+          <a href="https://www.fiverr.com/frontendbazaar" class="footer-link-a" target="_blank">
+            <p class="footer-link">Fiverr</p>
+          </a>
+          <a href="https://www.instagram.com/front_end_bazaar" class="footer-link-a" target="_blank">
+            <p class="footer-link">Instagram</p>
+          </a>
+          <a href="https://www.fiverr.com/frontendbazaar" class="footer-link-a" target="_blank">
+            <p class="footer-link">Facebook</p>
+          </a>
+        </div>
+        <div class="footer-links">
+          <h3 class="footer-header">Legal</h3>
+          <a href="legal.html#tc" class="footer-link-a">
+            <p class="footer-link">Terms and Conditions</p>
+          </a>
+          <a href="legal.html#pd" class="footer-link-a">
+            <p class="footer-link">Personal Data</p>
+          </a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="copyright fs-5">
+          <p><span class="copy">&copy</span> 2023 frontendbazaar.com | <span class="copy">Teal Innovations LLC</span></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

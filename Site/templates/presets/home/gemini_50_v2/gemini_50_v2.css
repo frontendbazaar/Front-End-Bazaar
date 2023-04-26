@@ -1,0 +1,360 @@
+/* ENTIRE PAGE */
+@import url('https://fonts.cdnfonts.com/css/elianto');
+
+:root {
+    --main-baby-blue: #DFE5EB;
+    --main-baby-pink: #EBDFE8;
+    --main-white: white;
+    --main-black: black;
+    --main-gray: #5c5c5c;
+    --main-purple: #9d73e4;
+    --main-lila: #d49fef;
+    --main-pink: #ecb1f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    margin: 1vh 0.5vw;
+}
+
+/* First page */
+
+.first-page {
+    width: 100%;
+    height: 90vh;
+    background-color: #0D1942;
+    display: flex;
+    color: white;
+    margin-bottom: 1vh;
+    border-radius: 10px;
+}
+
+.fp-left {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.fp-right {
+    width: 50%;
+    background-image: url(../../images/tiles.jpg);
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.fp-tile-image {
+    display: none;
+}
+
+.fp-title {
+    margin: auto;
+    font-size: 3vmax;
+}
+
+/* Second page */
+
+.second-page {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    padding: 5vh 0;
+    text-align: center;
+    margin-bottom: 1vh;
+    border-radius: 10px;
+}
+
+.sp-title {
+    font-size: 2vmax;
+    padding-bottom: 3vh;
+    max-width: 50%;
+    margin: auto;
+}
+
+.sp-text {
+    font-size: 1vmax;
+    max-width: 50%;
+    margin: auto;
+}
+
+/* Third page */
+
+.third-page {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: white;
+    display: flex;
+    margin-bottom: 1vh;
+    border-radius: 10px;
+}
+
+.tp-left {
+    width: 50%;
+    display: block;
+    color: black;
+    margin: auto;
+}
+
+.tp-right {
+    width: 50%;
+    display: flex;
+    background-color: #0D1942;
+    padding: 5vh 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.tp-title {
+    text-align: center;
+    margin: auto 0;
+    font-size: 2vmax;
+}
+
+.products-tiles {
+    display: flex;
+    margin: auto;
+    gap: 5vh 5vw;
+}
+
+.tile {
+    text-align: left;
+    max-width: 300px;
+}
+
+.tile-image {
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    border: 10px solid grey;
+    border-radius: 20px;
+}
+
+.tile-name {
+    padding: 2vh 0 1vh 0;
+}
+
+.browse {
+    color: black;
+    text-align: center;
+}
+
+.browse h2 {
+    padding: 5vh 0;
+}
+
+footer, header {
+    background-color: #212529;
+    height: 5vh;
+    width: 100%;
+}
+
+footer h2, header h2 {
+    text-align: center;
+    color: white;
+    padding-top: 0.5vh;
+    font-size: 1.5vmax;
+}
+
+@media (max-width: 700px) {
+    .first-page {
+        display: block;
+    }
+
+    .fp-left {
+        height: 50%;
+    }
+
+    .fp-right {
+        display: block;
+        height: 50%;
+        width: 100%;
+    }
+    
+    .fp-title {
+        font-size: 3vmax;
+        padding-top: 10vh;
+    }
+
+    .second-page {
+        display: block;
+    }
+
+    .sp-left {
+        text-align: left;
+        max-width: 60vw;
+    }
+
+    .sp-title {
+        padding: 0;
+        margin: 4vh auto 2vh;
+        max-width: 60vw;
+        font-size: 3vmax;
+    }
+
+    .sp-text {
+        max-width: 60vw;
+        font-size: 1.5vmax;
+        padding: 0;
+        margin: auto;
+    }
+    
+    .sp-right {
+        text-align: center;
+        width: 60vw;
+    }
+
+    .sp-image {
+        width: 60vw;
+    }
+
+    .third-page {
+        display: block;
+    }
+
+    .tp-right {
+        width: 100%;
+    }
+
+    .tp-title {
+        font-size: 3vmax;
+        padding-top: 2vh;
+    }
+
+    .tile {
+        width: 200px;
+    }
+
+    .tile-name {
+        font-size: 2vmax;
+    }
+
+    .tile-description {
+        font-size: 1.5vmax;
+    }
+
+    .tile-image {
+        width: 200px;
+        height: 200px;
+        background-color: #ffffff;
+        border: 5px solid grey;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .products-tiles {
+        display: block;
+    }
+
+    .tile {
+        padding-bottom: 5vh;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+    .first-page {
+        display: block;
+    }
+
+    .fp-left {
+        height: 50%;
+    }
+
+    .fp-right {
+        display: block;
+        height: 50%;
+        width: 100%;
+    }
+
+    .fp-title {
+        font-size: 3vmax;
+        padding-top: 12vh;
+    }
+
+    .sp-right {
+        margin-right: 5vw;
+    }
+    
+    .third-page {
+        display: flex;
+    }
+
+    .tp-right {
+        width: 100%;
+    }
+
+    .tp-title {
+        font-size: 3vmax;
+        padding-top: 2vh;
+    }
+
+    .tile {
+        width: 250px;
+    }
+
+    .tile-image {
+        width: 250px;
+        height: 250px;
+        background-color: #ffffff;
+        border: 7px solid grey;
+        border-radius: 20px;
+    }
+
+    .browse h2{
+        font-size: 2vmax;
+    }
+}
+
+
+@media (width: 800px) and (height: 450px) {
+
+    .fp-right {
+        height: 100%;
+        width: 50%;
+    }
+
+    .first-page {
+        display: flex;
+    }
+
+    .tp-right {
+        width: 50%;
+    }
+
+    .tile-image {
+        width: 150px;
+        height: 150px;
+        border: 3px solid grey;
+    }
+
+    .products-tiles {
+        display: flex;
+        gap: 5vh 5vw;
+        margin: auto;
+    }
+
+    .tile {
+        max-width: 19vw;
+    }
+
+    .tile-name {
+        font-size: 2vmax;
+    }
+
+    .tile-description {
+        font-size: 1.5vmax;
+    }
+
+    .browse {
+        font-size: 1.5vmax;
+    }
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="icon" type="image/x-icon" href="img-home/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://fonts.cdnfonts.com/css/elianto" rel="stylesheet">
+    <title>Front-End Bazaar - Contact</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-height fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand elianto mt-1" href="index.html">
+          <img src="img-home/favicon.png" alt="" class="logo-img px-3">
+          <h4>FRONT-END BAZAAR</h4>
+        </a>
+        <button class="navbar-toggler button-mt button-mr" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="bbtn bi bi-list fs-3"></i>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header text-white">
+            <h5 class="offcanvas-title fs-2" id="offcanvasNavbarLabel">Browse the Bazaar</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active text-white fs-4 hover" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white fs-4 hover" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Catalogue
+                </a>
+                <ul class="dropdown-menu text-bg-dark">
+                  <li><a class="dropdown-item text-bg-dark text-white fs-5 hover" href="catalogue.html">All</a></li>
+                  <hr class="dropdown-divider">
+                  <li><a class="dropdown-item text-bg-dark text-white hover" href="catalogue.html#presets">Presets</a></li>
+                  <li><a class="dropdown-item text-bg-dark text-white hover" href="catalogue.html#colors">Colors</a></li>
+                  <li><a class="dropdown-item text-bg-dark text-white hover" href="catalogue.html#images">Images</a></li>
+                  <li><a class="dropdown-item text-bg-dark text-white hover" href="catalogue.html#add-ons">Add-ons</a></li>
+                </ul>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-4 hover" href="index.html#pricing">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white fs-4 hover" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Order
+                </a>
+                <ul class="dropdown-menu text-bg-dark">
+                  <li><a class="dropdown-item text-bg-dark text-white hover" href="index.html#pricing">Choose presets</a></li>
+                  <li><a class="dropdown-item text-bg-dark text-white hover" href="https://www.fiverr.com/frontendbazaar" target="_blank">From scratch</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-4 hover" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-4 hover" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-4 hover" href="legal.html">Legal</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Main PAGE -->
+
+    <main>
+
+        <!-- Main content -->
+        <div class="main-container">
+          <form action="https://getform.io/f/f924061f-544d-4a57-b58f-3c9db73b3735" method="POST">
+            <div class="form-group">
+              <label class="fs-5" for="name">Full name <span class="text-primary">*</span></label>
+              <input type="text" name="name" class="form-control" id="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label class="fs-5" for="email">Email address <span class="text-primary">*</span></label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+              <label class="fs-5" for="message">Message <span class="text-primary">*</span></label>
+              <textarea class="form-control" name="message" id="message" rows="4" placeholder="Write your message..." required></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            <div class="form-group">
+              <label class="fs-9" for="name"><span class="text-primary">*</span> required fields</label>
+            </div>
+          </form>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-left">
+        <div class="footer-links">
+          <h3 class="footer-header">Links</h3>
+          <a href="index.html" class="footer-link-a">
+            <p class="footer-link">Home</p>
+          </a>
+          <a href="catalogue.html" class="footer-link-a">
+            <p class="footer-link">Catalogue</p>
+          </a>
+          <a href="index.html#fp" class="footer-link-a" target="_blank">
+            <p class="footer-link">Order</p>
+          </a>
+          <a href="about.html" class="footer-link-a">
+            <p class="footer-link">About</p>
+          </a>
+          <a href="contact.html" class="footer-link-a">
+            <p class="footer-link">Contact</p>
+          </a>
+        </div>
+        <div class="footer-links">
+          <h3 class="footer-header">Social</h3>
+          <a href="https://www.fiverr.com/frontendbazaar" class="footer-link-a" target="_blank">
+            <p class="footer-link">Fiverr</p>
+          </a>
+          <a href="https://www.instagram.com/front_end_bazaar" class="footer-link-a" target="_blank">
+            <p class="footer-link">Instagram</p>
+          </a>
+          <a href="https://www.fiverr.com/frontendbazaar" class="footer-link-a" target="_blank">
+            <p class="footer-link">Facebook</p>
+          </a>
+        </div>
+        <div class="footer-links">
+          <h3 class="footer-header">Legal</h3>
+          <a href="legal.html#tc" class="footer-link-a">
+            <p class="footer-link">Terms and Conditions</p>
+          </a>
+          <a href="legal.html#pd" class="footer-link-a">
+            <p class="footer-link">Personal Data</p>
+          </a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="copyright fs-5">
+          <p><span class="copy">&copy</span> 2023 frontendbazaar.com | <span class="copy">Teal Innovations LLC</span></p>
+        </div>
+      </div>
+    </footer>
+
+  <script src="index.js"></script>
+
+</body>
+</html>

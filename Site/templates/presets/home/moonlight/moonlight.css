@@ -1,0 +1,231 @@
+/* ENTIRE PAGE */
+@import url('https://fonts.cdnfonts.com/css/elianto');
+
+:root {
+    --main-baby-blue: #DFE5EB;
+    --main-baby-pink: #EBDFE8;
+    --main-white: white;
+    --main-black: black;
+    --main-gray: #5c5c5c;
+    --main-purple: #9d73e4;
+    --main-lila: #d49fef;
+    --main-pink: #ecb1f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* First page */
+
+.first-page {
+    width: 100%;
+    height: 90vh;
+    background-color: #0D1942;
+    display: flex;
+    border-bottom: 2px solid black;
+    color: white;
+}
+
+.fp-title {
+    margin: auto;
+    font-size: 3vmax;
+}
+
+/* Second page */
+
+.second-page {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sp-left {
+    width: 50vmax;
+    margin: auto;
+}
+
+.sp-title {
+    font-size: 2vmax;
+    padding: 0 10vw 5vh;
+}
+
+.sp-text {
+    font-size: 1vmax;
+    max-width: 50%;
+    padding: 0 10vw;
+}
+
+.sp-right {
+    margin: 10vh auto;
+}
+
+.sp-image {
+    width: 25vmax;
+    background-color: #ffffff;
+    border: 2px solid black;
+    box-shadow: -5px -5px 30px rgb(71, 71, 71);
+    border-radius: 50px;
+}
+
+/* Third page */
+
+.third-page {
+    width: 100%;
+    height: 100%;
+    background-color: #0D1942;
+    border-bottom: 2px solid black;
+    color: white;
+}
+
+.tp-title {
+    text-align: center;
+    padding: 10vh 0;
+    font-size: 3vmax;
+}
+
+.products-tiles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10vh 10vw;
+    padding: 0 10vw;
+}
+
+.tile {
+    text-align: left;
+}
+
+.tile-image {
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    border: 10px solid grey;
+    border-radius: 20px;
+}
+
+.tile-name {
+    padding: 2vh 0 1vh 0;
+}
+
+.tile-description {
+    max-width: 300px;
+}
+
+.browse {
+    color: white;
+    text-align: center;
+}
+
+.browse h2 {
+    padding: 5vh 0;
+}
+
+footer, header {
+    background-color: #212529;
+    height: 5vh;
+    width: 100%;
+}
+
+footer h2, header h2 {
+    text-align: center;
+    color: white;
+    padding-top: 0.5vh;
+    font-size: 1.5vmax;
+}
+
+@media (max-width: 700px) {
+    .fp-title {
+        font-size: 3vmax;
+    }
+
+    .second-page {
+        display: block;
+    }
+
+    .sp-left {
+        text-align: left;
+        max-width: 60vw;
+    }
+
+    .sp-title {
+        padding: 0;
+        margin: 4vh auto 2vh;
+        max-width: 60vw;
+        font-size: 3vmax;
+    }
+
+    .sp-text {
+        max-width: 60vw;
+        font-size: 1.5vmax;
+        padding: 0;
+        margin: auto;
+    }
+    
+    .sp-right {
+        text-align: center;
+        width: 60vw;
+    }
+
+    .sp-image {
+        width: 60vw;
+    }
+
+    .tp-title {
+        font-size: 3vmax;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+    .fp-title {
+        font-size: 4vmax;
+    }
+
+    .sp-right {
+        margin-right: 5vw;
+    }
+
+    .tp-title {
+        font-size: 4vmax;
+    }
+}
+
+
+@media (width: 800px) and (height: 450px) {
+    .tile-image {
+        width: 25vw;
+        height: 200px;
+        border: 3px solid grey;
+    }
+
+    .products-tiles {
+        display: flex;
+        gap: 10vh 2vw;
+        padding: 0 2vw;
+        justify-content: space-evenly;
+    }
+
+    .tile {
+        max-width: 25vw;
+    }
+
+    .tile-name {
+        font-size: 3vmax;
+    }
+
+    .tile-description {
+        font-size: 1.5vmax;
+    }
+
+    .browse {
+        font-size: 1.5vmax;
+    }
+}
